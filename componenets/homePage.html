@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="homePageStyle.css">
+    <!--    PartyJS-->
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+</head>
+<body>
+<div class="full-ContFl">
+    <div class="container-fluid">
+        <section class="navSection">
+            <nav class="navbar">
+                <a class="navbar-brand">
+                    Figma Layout Design
+                </a>
+            </nav>
+        </section>
+    </div>
+
+    <section class="mainSection">
+        <div class="container">
+
+            <div class="containerImage">
+                <img class="roundedImg" src="https://picsum.photos/200/300">
+            </div>
+            <h1 class="display-3">This is where you'll manage your Waiting List</h1>
+            <p class="lead text-muted">Create your first Waiting List</p>
+            <button type="button" class="btn btn-outline-primary">Create Waiting List</button>
+        </div>
+    </section>
+
+    <hr/> <!--Divider-->
+
+    <section class="votingSystemSection">
+        <p id="paragraph" class="valueDisplay text-muted display-6">.VALUE.</p>
+        <button onclick="party.confetti(this)" class="addV btn btn-outline-success">Add Value</button>
+        <button onclick="party.sparkles(this)" class="subV btn btn-outline-dark">Subtract Value</button>
+    </section>
+
+    <section class="footerSection">
+        <footer class="footer">
+            <div class="contactDev">
+                <input type="text" class="form-control form-control-sm"/>
+                <button onclick="sendMail()" type="button" class="btn btn-dark btn-sm">Shoot a Message to the Dev
+                </button>
+            </div>
+
+            <p class="display-6">
+                Copyright @ Adi 2022
+            </p>
+        </footer>
+    </section>
+</div>
+
+<!--Bridge between Html and Js-->
+<script src="/backend/scripts.js"></script>
+</body>
+</html>

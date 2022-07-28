@@ -1,0 +1,21 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.full-ContFl {
+    height: 100vh;
+}
+
+:root {
+    --c1: #EED180;
+    --c2: #D75281;
+    --c3: #FF8FB1;
+    --c4: #7A4495;
+}
+
+.navSection {
+    background: radial-gradient(ellipse at right, var(--c1), var(--c2), transparent),
+    radial-gradient(ellipse at top, var(--c3), var(--c4), transparent);
+    background-size: 200% 200%;
+}
